@@ -12,43 +12,112 @@ body {
   justify-content: center;
   flex-direction: column;
   align-items: center;
-  background-color: #333333;
 }
 
 .heading {
   padding: 20px;
   font-size: 40px;
-  color: aqua;
+  color: #ECF0F1;
 }
 
 .container {
-  border: 2px solid #020405;
-  border-radius: 20px;
-  box-shadow: #279bd5;
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  height: inherit;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+#upper {
+  background-color: #34495E;
+  bottom: 20px;
+  width: 100%;
+  height: 65%;
+  display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  width: 90%;
-  height: 90vh;
-  margin: 10px;
 }
 
-.choices {
+#bothChoices {
+  position: fixed;
+  top: 20px;
+  padding: 10px;
+  width: 100%;
+  height: 30%;
   display: flex;
-  justify-content: space-around;
   flex-direction: row;
+  justify-content: space-between;
 }
 
-.button {
-  height: 50px;
-  width: 100px;
-  border-radius: 10px;
+#bothChoices>.bothC {
+  align-items: center;
+  font-weight: bold;
+  color: #3498DB;  /* border: 1px solid green; */
 }
 
-#Result {
+
+#bothChoices>.bothC>#userC, #bothChoices>.bothC>#compC {
+  color: #F1C40F; 
+  font-weight: lighter;
+  /* border: 1px solid rgb(212, 234, 16); */
+}
+
+
+#result {
+  border-radius: 20px;
   padding: 20px;
-  border: 2px solid #279bd5;
-  background-color: white;
-  border-radius: 10px;
+  font-weight: bold;
+  color: #ECF0F1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: radial-gradient(circle, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.8));
+  font-size: 40px;
+  width: 80%;
+  max-width: 400px;
+}
+
+#lower {
+  background-color: #1ABC9C;
+  bottom: 20px;
+  width: 100%;
+  height: 35%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+#choices {
+  width: 100%;
+  height: 35%;
+  margin-top: -2;
+  background-color: #34495E;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+  border: 3px solid #34495E;
+}
+
+button {
+  width: 32%;
+  border-radius: 50% 50% 0px 0px;
+  padding: 10px 0px;
+  margin: 0;
+  font-size: 20px;
+  border: none;
+  background-color: #2980B9; 
+  height: 100%;
+}
+
+button:hover {
+  background-color: #5ba9dd;
+}
+
+.info {
+  margin: 10px;
+  width: 100%;
+  background-color: #34495E;
+  height: 60%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
 }
