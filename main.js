@@ -2,7 +2,7 @@ let userChoice
 let computerChoice
 
 function getComputerChoice() {
-  const choices = ["rock", "paper", "scissors"];
+  const choices = ["rock", "paper", "scissor"];
   const randomIndex = Math.floor(Math.random() * choices.length);
   return choices[randomIndex];
 }
@@ -12,12 +12,12 @@ function declareWinner(userChoice, computerChoice) {
   if (userChoice === computerChoice) {
     return "It's a tie! 🤜🤛";
   } 
-  if ((userChoice === "rock" && computerChoice === "scissors") ||
-      (userChoice === "scissors" && computerChoice === "paper") ||
+  if ((userChoice === "rock" && computerChoice === "scissor") ||
+      (userChoice === "scissor" && computerChoice === "paper") ||
       (userChoice === "paper" && computerChoice === "rock")) {
     return `You win!🎉 ${capitalize(userChoice)} beats ${computerChoice}.`;
   } else {
-    return `You lose!🫥 ${capitalize(computerChoice)} beats ${userChoice}.`;
+    return `You lose!😢 ${capitalize(computerChoice)} beats ${userChoice}.`;
   }
 }
 
